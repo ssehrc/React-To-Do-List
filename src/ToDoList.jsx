@@ -13,8 +13,13 @@ function ToDoList(){
             setNewTask(""); 
         }
         
-
     }
+    function deleteTask(index){
+        //_ means ignore this element
+        const updatedTask = tasks.filter((_, i) => i !== index);
+        setTasks(updatedTask);
+    }
+    
     function moveTaskUp(index){
 
     }
